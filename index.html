@@ -1,171 +1,539 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TR-103 Blog</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        header {
-            background-color: #0078fe;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        main {
-            padding: 20px;
-        }
-        .day-entry {
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-            padding: 15px;
-        }
-        .day-entry h3 {
-            margin: 0 0 10px 0;
-        }
-        .day-entry p {
-            margin: 5px 0;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>TR-103 Blog</h1>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Guransh Singh Channi | MERN Developer</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Template Name: EasyFolio
+  * Template URL: https://bootstrapmade.com/easyfolio-bootstrap-portfolio-template/
+  * Updated: Feb 21 2025 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <body class="index-page">
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div
+        class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+      >
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <div class="header-social-links">
+          <a
+            href="https://www.linkedin.com/in/guransh-singh-channi-a5b828320/"
+            class="linkedin"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+          <a href="https://github.com/GuranshSinghChanni" class="github"
+            ><i class="bi bi-github"></i
+          ></a>
+        </div>
+      </div>
     </header>
-    <main>
-        <!-- Week 1 -->
-        <div class="day-entry">
-            <h3>June 11</h3>
-            <p><strong>Topic:</strong> Introduction to Django</p>
-            <p><strong>Details:</strong> Learned the basics of Django and set up the development environment. Installed Python and Django.</p>
+
+    <main class="main">
+      <!-- Hero Section -->
+      <section id="hero" class="hero section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row align-items-center content">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <h2>Hi, I'm Guransh Singh Channi</h2>
+              <p class="lead">
+                Self-driven, quick starter, passionate developer with a curious
+                mind who enjoys solving a complex and challenging real-world
+                problems.
+              </p>
+              <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
+                <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Let's Connect</a>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+              <div class="hero-visual">
+                <div class="profile-container">
+                  <div class="profile-background"></div>
+                  <img
+                    src="assets/img/GuranshSingh.jpg"
+                    alt="Guransh Singh Channi"
+                    class="profile-image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="day-entry">
-            <h3>June 12</h3>
-            <p><strong>Topic:</strong> Django Project Structure</p>
-            <p><strong>Details:</strong> Explored the structure of a Django project. Created a new project and learned about `settings.py` and `urls.py`.</p>
+      </section>
+      <!-- /Hero Section -->
+
+      <!-- About Section -->
+      <section id="about" class="about section light-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>About</h2>
+          <div class="title-shape">
+            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </div>
         </div>
-        <div class="day-entry">
-            <h3>June 13</h3>
-            <p><strong>Topic:</strong> Django Apps</p>
-            <p><strong>Details:</strong> Created reusable apps within the Django project. Understood how to use `manage.py` commands effectively.</p>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row align-items-center">
+            <div class="col" data-aos="fade-left" data-aos-delay="300">
+              <div class="about-content">
+                <span class="subtitle">About Me</span>
+
+                <h2>MERN Developer</h2>
+
+                <p class="lead mb-4">
+                  Results-driven MERN Stack Developer with hands-on experience
+                  in building full-stack web applications using MongoDB,
+                  Express.js, React.js, and Node.js. Skilled in developing and
+                  integrating RESTful APIs to ensure seamless communication
+                  between front-end and back-end systems. Proficient in code
+                  optimization, responsiveness, and user experience. Adept at
+                  working collaboratively in team environments, and committed to
+                  delivering clean, efficient, and scalable solutions.
+                </p>
+
+                <div class="personal-info">
+                  <div class="row g-4">
+                    <div class="col-md-4">
+                      <div class="info-item">
+                        <span class="subtitle">Skills</span>
+                        <ul>
+                          <li class="value">HTML, CSS, JavaScript, jQuery</li>
+                          <li class="value">React.js, Node.js</li>
+                          <li class="value">Express.js, MongoDB</li>
+                          <li class="value">RESTful APIs</li>
+                          <li class="value">Research and Development</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="info-item">
+                        <span class="subtitle">Languages</span>
+                        <ul>
+                          <li class="value">English</li>
+                          <li class="value">Hindi</li>
+                          <li class="value">Punjabi</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="info-item">
+                        <span class="subtitle">Tools</span>
+                        <ul>
+                          <li class="value">Git</li>
+                          <li class="value">Postman</li>
+                          <li class="value">MongoDB Compass</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="day-entry">
-            <h3>June 14</h3>
-            <p><strong>Topic:</strong> Models and Migrations</p>
-            <p><strong>Details:</strong> Created models and performed migrations to set up database tables using Django ORM.</p>
+      </section>
+      <!-- /About Section -->
+
+      <!-- Resume Section -->
+      <section id="resume" class="resume section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Resume</h2>
+          <div class="title-shape">
+            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </div>
         </div>
-        <div class="day-entry">
-            <h3>June 15</h3>
-            <p><strong>Topic:</strong> Django Admin</p>
-            <p><strong>Details:</strong> Customized the Django admin interface to manage database entries and explored admin options.</p>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row">
+            <div class="col-12">
+              <div class="resume-wrapper">
+                <div class="resume-block" data-aos="fade-up">
+                  <h2>Work Experience</h2>
+                  <p class="lead"></p>
+
+                  <div class="timeline">
+                    <div
+                      class="timeline-item"
+                      data-aos="fade-up"
+                      data-aos-delay="200"
+                    >
+                      <div class="timeline-left">
+                        <h4 class="company">iapp Technologies</h4>
+                        <span class="period">July, 2024 - January, 2025</span>
+                      </div>
+                      <div class="timeline-dot"></div>
+                      <div class="timeline-right">
+                        <h3 class="position">MERN Technology Intern</h3>
+                        <ul>
+                          <li>
+                            Gained hands-on experience in MERN stack (MongoDB,
+                            Express.js, React, Node.js) development through
+                            participation in 2 live projects.
+                          </li>
+                          <li>
+                            Actively contributed to bug fixes and enhancements
+                            in the existing codebase, improving the performance
+                            and functionality of the projects.
+                          </li>
+                          <li>
+                            Conducted in-depth research on best practices,
+                            libraries, and frameworks, and applied findings to
+                            optimize and innovate solutions for project
+                            development.
+                          </li>
+                          <li>
+                            Collaborated with senior developers and team
+                            members, contributing to code reviews and
+                            maintaining consistent coding standards.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div
+                      class="timeline-item"
+                      data-aos="fade-up"
+                      data-aos-delay="200"
+                    >
+                      <div class="timeline-left">
+                        <h4 class="company">
+                          PRSC (Punjab Remote Sensing Centre)
+                        </h4>
+                        <span class="period">June, 2023 - July, 2023</span>
+                      </div>
+                      <div class="timeline-dot"></div>
+                      <div class="timeline-right">
+                        <h3 class="position">Intern</h3>
+                        <ul>
+                          <li>
+                            Worked on the Ludhiana Tourism Story Map project,
+                            creating an interactive and visually engaging
+                            landing page to promote tourism in the region.
+                          </li>
+                          <li>
+                            Utilized StoryMapJS and GeoServer to integrate
+                            geospatial data, enhancing the user experience by
+                            mapping key landmarks and points of interest.
+                          </li>
+                          <li>
+                            Assisted in the deployment and maintenance of the
+                            landing page, ensuring its functionality and
+                            accessibility.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="resume-block"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <h2>My Education</h2>
+                  <p class="lead"></p>
+
+                  <div class="timeline">
+                    <div
+                      class="timeline-item"
+                      data-aos="fade-up"
+                      data-aos-delay="200"
+                    >
+                      <div class="timeline-left">
+                        <h4 class="company">
+                          Guru Nanak Dev Engineering College
+                        </h4>
+                        <span class="period">2022-2025</span>
+                      </div>
+                      <div class="timeline-dot"></div>
+                      <div class="timeline-right">
+                        <h3 class="position">
+                          B.Tech (Computer Science and Engineering)
+                        </h3>
+                        <p class="description">
+                          Completed a Bachelor of Technology in Computer Science
+                          and Engineering, focusing on software development, web
+                          technologies, and database management.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="timeline-item"
+                      data-aos="fade-up"
+                      data-aos-delay="300"
+                    >
+                      <div class="timeline-left">
+                        <h4 class="company">
+                          Guru Nanak Dev Polytechnic College
+                        </h4>
+                        <span class="period">2019 - 2022</span>
+                      </div>
+                      <div class="timeline-dot"></div>
+                      <div class="timeline-right">
+                        <h3 class="position">
+                          Diploma (Computer Science and Engineering)
+                        </h3>
+                        <p class="description">
+                          Completed a Diploma in Computer Science and
+                          Engineering, gaining foundational knowledge in
+                          programming, data structures, and computer systems.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        
-        <!-- Week 2 -->
-        <div class="day-entry">
-            <h3>June 18</h3>
-            <p><strong>Topic:</strong> Views and Templates</p>
-            <p><strong>Details:</strong> Learned to create views and render templates. Used the Django template language for dynamic content.</p>
+      </section>
+      <!-- /Resume Section -->
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio section light-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Portfolio</h2>
+          <div class="title-shape">
+            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </div>
         </div>
-        <div class="day-entry">
-            <h3>June 19</h3>
-            <p><strong>Topic:</strong> URL Routing</p>
-            <p><strong>Details:</strong> Understood URL patterns and created clean and structured URL configurations for apps.</p>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="isotope-layout"
+            data-default-filter="*"
+            data-layout="masonry"
+            data-sort="original-order"
+          >
+            <div
+              class="row g-4 isotope-container"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div
+                class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web"
+              >
+                <div class="portfolio-card">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="portfolio-details.html" class="details-link"
+                        ><i class="bi bi-arrow-right"></i
+                      ></a>
+                    </div>
+                  </div>
+
+                  <div class="portfolio-content">
+                    <h3>AI-Powered Multi-Modal Chatbot</h3>
+                    <p>
+                      An AI-driven chatbot that integrates multiple advanced AI
+                      models, including GPT-4 Mini, Gemini, Mistral, Claude, and
+                      DALL-E
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics"
+              >
+                <div class="portfolio-card">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="portfolio-details-two.html" class="details-link"
+                        ><i class="bi bi-arrow-right"></i
+                      ></a>
+                    </div>
+                  </div>
+
+                  <div class="portfolio-content">
+                    <h3>GrowStack Extension</h3>
+                    <p>
+                      AI-powered platform delivering smarter, faster, and more
+                      relevant web search results directly in your browser.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+            </div>
+            <!-- End Portfolio Container -->
+          </div>
         </div>
-        <div class="day-entry">
-            <h3>June 20</h3>
-            <p><strong>Topic:</strong> Static Files</p>
-            <p><strong>Details:</strong> Configured static files and learned how to serve CSS, JavaScript, and images in Django.</p>
+      </section>
+      <!-- /Portfolio Section -->
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Contact</h2>
+          <div class="title-shape">
+            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </div>
         </div>
-        <div class="day-entry">
-            <h3>June 21</h3>
-            <p><strong>Topic:</strong> Forms in Django</p>
-            <p><strong>Details:</strong> Created forms using Django’s built-in form class. Handled form validation and submission.</p>
+        <!-- End Section Title -->
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row g-5">
+            <div class="col-lg-6">
+              <div class="content" data-aos="fade-up" data-aos-delay="200">
+                <div class="contact-info mt-5">
+                  <div class="info-item d-flex mb-3">
+                    <i class="bi bi-envelope-at me-3"></i>
+                    <a href="mailto:guranshsinghchanni@gmail.com"
+                      >guranshsinghchanni@gmail.com</a
+                    >
+                  </div>
+
+                  <div class="info-item d-flex mb-3">
+                    <i class="bi bi-telephone me-3"></i>
+                    <a href="tel:+919888148009">+919888148009</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="content" data-aos="fade-up" data-aos-delay="200">
+                <div class="contact-info mt-5">
+                  <div class="info-item d-flex mb-3">
+                    <i class="bi bi-linkedin me-3"></i>
+                    <a
+                      target="_blank"
+                      href="https://www.linkedin.com/in/guransh-singh-channi-a5b828320/"
+                      >linkedin.com/in/guransh-singh-channi-a5b828320</a
+                    >
+                  </div>
+
+                  <div class="info-item d-flex mb-3">
+                    <i class="bi bi-github me-3"></i>
+                    <a
+                      target="_blank"
+                      href="https://github.com/GuranshSinghChanni"
+                      >github.com/GuranshSinghChanni</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="day-entry">
-            <h3>June 22</h3>
-            <p><strong>Topic:</strong> Models Advanced</p>
-            <p><strong>Details:</strong> Explored advanced model relationships like one-to-many and many-to-many. Used related fields effectively.</p>
-        </div>
-        
-        <!-- Week 3 -->
-        <div class="day-entry">
-            <h3>June 25</h3>
-            <p><strong>Topic:</strong> Authentication</p>
-            <p><strong>Details:</strong> Implemented user authentication. Learned to create login, logout, and register views.</p>
-        </div>
-        <div class="day-entry">
-            <h3>June 26</h3>
-            <p><strong>Topic:</strong> User Authorization</p>
-            <p><strong>Details:</strong> Configured permissions and groups. Restricted access to certain pages based on user roles.</p>
-        </div>
-        <div class="day-entry">
-            <h3>June 27</h3>
-            <p><strong>Topic:</strong> Django Middleware</p>
-            <p><strong>Details:</strong> Explored middleware and its role in request and response handling. Created custom middleware.</p>
-        </div>
-        <div class="day-entry">
-            <h3>June 28</h3>
-            <p><strong>Topic:</strong> File Uploads</p>
-            <p><strong>Details:</strong> Configured file uploads in Django. Handled media files in forms and templates.</p>
-        </div>
-        <div class="day-entry">
-            <h3>June 29</h3>
-            <p><strong>Topic:</strong> Testing in Django</p>
-            <p><strong>Details:</strong> Learned to write and run unit tests for views, models, and templates.</p>
-        </div>
-        
-        <!-- Week 4 -->
-        <div class="day-entry">
-            <h3>July 2</h3>
-            <p><strong>Topic:</strong> REST APIs with Django</p>
-            <p><strong>Details:</strong> Built RESTful APIs using Django REST framework. Explored serializers and viewsets.</p>
-        </div>
-        <div class="day-entry">
-            <h3>July 3</h3>
-            <p><strong>Topic:</strong> Pagination and Filtering</p>
-            <p><strong>Details:</strong> Added pagination and filtering to APIs for better performance and usability.</p>
-        </div>
-        <div class="day-entry">
-            <h3>July 4</h3>
-            <p><strong>Topic:</strong> Performance Optimization</p>
-            <p><strong>Details:</strong> Explored techniques to optimize Django queries and improve application performance.</p>
-        </div>
-        <div class="day-entry">
-            <h3>July 5</h3>
-            <p><strong>Topic:</strong> Caching</p>
-            <p><strong>Details:</strong> Implemented caching mechanisms to reduce database load and speed up requests.</p>
-        </div>
-        <div class="day-entry">
-            <h3>July 6</h3>
-            <p><strong>Topic:</strong> Deployment</p>
-            <p><strong>Details:</strong> Deployed the Django application on a live server. Learned about deployment strategies and tools.</p>
-        </div>
-        
-        <!-- Week 5 -->
-        <div class="day-entry">
-            <h3>July 9</h3>
-            <p><strong>Topic:</strong> Advanced Django Features</p>
-            <p><strong>Details:</strong> Explored advanced features like custom user models, signals, and database indexing.</p>
-        </div>
-        <div class="day-entry">
-            <h3>July 10</h3>
-            <p><strong>Topic:</strong> Final Project Planning</p>
-            <p><strong>Details:</strong> Planned the final project. Created wireframes and finalized database schema.</p>
-        </div>
-        <div class="day-entry">
-            <h3>July 11</h3>
-            <p><strong>Topic:</strong> Project Implementation</p>
-            <p><strong>Details:</strong> Started implementing the final project based on the planned structure.</p>
-        </div>
+      </section>
+      <!-- /Contact Section -->
     </main>
-</body>
+
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="copyright text-center">
+          <p>
+            © <span>Copyright</span>
+            <strong class="px-1 sitename">Guransh</strong>
+            <span>All Rights Reserved</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
